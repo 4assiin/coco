@@ -20,16 +20,19 @@
         <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
         <!-- CSS
    ================================================== -->
-        <link rel="stylesheet" href="https://stackpath.ootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link rel="stylesheet" href="css/base.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/vendor.css">
+
+        <!--animation on scroll
+        ==================================-->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
         <!-- script
    ================================================== -->
         <script src="js/modernizr.js"></script>
-        <!-- favicons
-	================================================== -->
-        <link rel="icon" type="image/png" href="favicon.png">
     </head>
     <body id="top">
         <!-- header 
@@ -47,19 +50,19 @@
                             <a class="smoothscroll current" href="#intro" title="">Home</a>
                         </li>
                         <li>
-                            <a class="smoothscroll" href="#process" title="">Process</a>
+                            <a class="smoothscroll" href="#f" title="">Process</a>
                         </li>
                         <li>
-                            <a class="smoothscroll" href="#features" title="">Features</a>
+                            <a class="smoothscroll" href="#prototype" title="">Features</a>
                         </li>
                         <li>
-                            <a class="smoothscroll" href="#price-tab" title="">Pricing</a>
+                            <a class="smoothscroll" href="#price" title="">Pricing</a>
                         </li>
                         <li>
                             <a class="smoothscroll" href="#faq" title="">FAQ</a>
                         </li>
                         <li class="highlight with-sep">
-                            <a href="login.html" title="">Sign Up</a>
+                            <a href="#" title="">Sign Up</a>
                         </li>
                     </ul>
                 </nav>
@@ -76,15 +79,15 @@
             <div class="intro-content">
                 <div class="row mr-top">
                     <div class="col-twelve ">
-                        <h5>
+                        <h5 data-aos="fade-down" >
                             <strong>MEET COCO</strong>
                         </h5>
-                        <h1 class="text-animation">Web Hosting with Purpose </h1>
-                        <p>
+                        <h1 data-aos="fade-right">Web Hosting with Purpose </h1>
+                        <p data-aos="fade-in" >
                             We make sure your website is fast, secure &amp;always up -<br>so your visitors &amp;search engines trust you. Guaranteed.
                         </p>
-                        <div id="bg-li-green" class=" button  smoothscroll hide " href="#process" title="">Learn More</div>
-                        <div class="button stroke smoothscroll video-link ">
+                        <div  id="bg-li-green" class=" button  smoothscroll hide " data-aos="fade-up" href="#process" title="">Learn More</div>
+                        <div class="button stroke smoothscroll video-link " data-aos="fade-up">
                             <a href="#video-popup">
                                 <i class="far fa-play-circle"></i>
                                 watch how it works
@@ -107,7 +110,7 @@
         <!--new futers
    ==================================================-->
         <div class="device">
-            <div class="feature">
+            <div class="feature " data-aos="zoom-out-down" >
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 63.29 33.72">
                     <defs>
                         <style>
@@ -134,7 +137,7 @@
                 <h4>Multi-device</h4>
                 <span>Design ​​for any device</span>
             </div>
-            <div class="feature">
+            <div id="f"  class="feature" data-aos="zoom-out-down">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39.52 28.25">
                     <defs>
                         <style>
@@ -158,7 +161,7 @@
                 <h4>Cloud-based</h4>
                 <span>Design and collaborate anywhere</span>
             </div>
-            <div class="feature" id="flex-warp">
+            <div class="feature" data-aos="zoom-out-down" id="flex-warp">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 74.93 44.66">
                     <defs>
                         <style>
@@ -243,10 +246,10 @@
                 All you need is a data stream. It could be anything. Our app connects <br>to it and immediatly starts giving you insight.
             </p>
             <div class="container">
-                <div class="pic">
+                <div class="pic " data-aos="zoom-out-down">
                     <img src="images/design-and-prototype.jpg" alt="">
                 </div>
-                <div class="descrption">
+                <div class="descrption " data-aos="zoom-out-down">
                     <h2>Design and prototype at the speed of thought!</h2>
                     <p>
                         Transform your ideas into high fidelity, clickable prototypes within <br>
@@ -257,9 +260,9 @@
                 </div>
             </div>
         </section>
-        <section style="background:#fff" id="collaboration" class="bg-white">
+        <section style="background:#fff" id="collaboration" class="bg-white ">
             <div class="container bg-white">
-                <div class="descrption">
+                <div class="descrption "data-aos="zoom-out-down" >
                     <h2>Complete collaboration</h2>
                     <p>
                         Transform your ideas into high fidelity, clickable prototypes within <br>
@@ -268,7 +271,7 @@
                     </p>
                     <div class="button">Try it today</div>
                 </div>
-                <div class="pic">
+                <div class="pic "data-aos="zoom-out-down" >
                     <img src="images/design-and-prototype.jpg" alt="">
                 </div>
             </div>
@@ -277,26 +280,27 @@
  Thousands of happy companies section
  =====================
 -->
-        <section id="happy-comp">
-            <div class="container">
+        <section class="happy-comp " data-aos="zoom-out">
                 <h5>Thousands of happy companies including:</h5>
-                <div class="comp-img">
+                <div class="comp-img ">
                     <div>
-                        <img src="images/ctm.png" alt="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M186.3 258.2c0 12.2-9.7 21.5-22 21.5-9.2 0-16-5.2-16-15 0-12.2 9.5-22 21.7-22 9.3 0 16.3 5.7 16.3 15.5zM80.5 209.7h-4.7c-1.5 0-3 1-3.2 2.7l-4.3 26.7 8.2-.3c11 0 19.5-1.5 21.5-14.2 2.3-13.4-6.2-14.9-17.5-14.9zm284 0H360c-1.8 0-3 1-3.2 2.7l-4.2 26.7 8-.3c13 0 22-3 22-18-.1-10.6-9.6-11.1-18.1-11.1zM576 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h480c26.5 0 48 21.5 48 48zM128.3 215.4c0-21-16.2-28-34.7-28h-40c-2.5 0-5 2-5.2 4.7L32 294.2c-.3 2 1.2 4 3.2 4h19c2.7 0 5.2-2.9 5.5-5.7l4.5-26.6c1-7.2 13.2-4.7 18-4.7 28.6 0 46.1-17 46.1-45.8zm84.2 8.8h-19c-3.8 0-4 5.5-4.2 8.2-5.8-8.5-14.2-10-23.7-10-24.5 0-43.2 21.5-43.2 45.2 0 19.5 12.2 32.2 31.7 32.2 9 0 20.2-4.9 26.5-11.9-.5 1.5-1 4.7-1 6.2 0 2.3 1 4 3.2 4H200c2.7 0 5-2.9 5.5-5.7l10.2-64.3c.3-1.9-1.2-3.9-3.2-3.9zm40.5 97.9l63.7-92.6c.5-.5.5-1 .5-1.7 0-1.7-1.5-3.5-3.2-3.5h-19.2c-1.7 0-3.5 1-4.5 2.5l-26.5 39-11-37.5c-.8-2.2-3-4-5.5-4h-18.7c-1.7 0-3.2 1.8-3.2 3.5 0 1.2 19.5 56.8 21.2 62.1-2.7 3.8-20.5 28.6-20.5 31.6 0 1.8 1.5 3.2 3.2 3.2h19.2c1.8-.1 3.5-1.1 4.5-2.6zm159.3-106.7c0-21-16.2-28-34.7-28h-39.7c-2.7 0-5.2 2-5.5 4.7l-16.2 102c-.2 2 1.3 4 3.2 4h20.5c2 0 3.5-1.5 4-3.2l4.5-29c1-7.2 13.2-4.7 18-4.7 28.4 0 45.9-17 45.9-45.8zm84.2 8.8h-19c-3.8 0-4 5.5-4.3 8.2-5.5-8.5-14-10-23.7-10-24.5 0-43.2 21.5-43.2 45.2 0 19.5 12.2 32.2 31.7 32.2 9.3 0 20.5-4.9 26.5-11.9-.3 1.5-1 4.7-1 6.2 0 2.3 1 4 3.2 4H484c2.7 0 5-2.9 5.5-5.7l10.2-64.3c.3-1.9-1.2-3.9-3.2-3.9zm47.5-33.3c0-2-1.5-3.5-3.2-3.5h-18.5c-1.5 0-3 1.2-3.2 2.7l-16.2 104-.3.5c0 1.8 1.5 3.5 3.5 3.5h16.5c2.5 0 5-2.9 5.2-5.7L544 191.2v-.3zm-90 51.8c-12.2 0-21.7 9.7-21.7 22 0 9.7 7 15 16.2 15 12 0 21.7-9.2 21.7-21.5.1-9.8-6.9-15.5-16.2-15.5z"/></svg>
                     </div>
                     <div>
-                        <img src="images/fastalne.png" alt="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M470.1 231.3s7.6 37.2 9.3 45H446c3.3-8.9 16-43.5 16-43.5-.2.3 3.3-9.1 5.3-14.9l2.8 13.4zM576 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h480c26.5 0 48 21.5 48 48zM152.5 331.2L215.7 176h-42.5l-39.3 106-4.3-21.5-14-71.4c-2.3-9.9-9.4-12.7-18.2-13.1H32.7l-.7 3.1c15.8 4 29.9 9.8 42.2 17.1l35.8 135h42.5zm94.4.2L272.1 176h-40.2l-25.1 155.4h40.1zm139.9-50.8c.2-17.7-10.6-31.2-33.7-42.3-14.1-7.1-22.7-11.9-22.7-19.2.2-6.6 7.3-13.4 23.1-13.4 13.1-.3 22.7 2.8 29.9 5.9l3.6 1.7 5.5-33.6c-7.9-3.1-20.5-6.6-36-6.6-39.7 0-67.6 21.2-67.8 51.4-.3 22.3 20 34.7 35.2 42.2 15.5 7.6 20.8 12.6 20.8 19.3-.2 10.4-12.6 15.2-24.1 15.2-16 0-24.6-2.5-37.7-8.3l-5.3-2.5-5.6 34.9c9.4 4.3 26.8 8.1 44.8 8.3 42.2.1 69.7-20.8 70-53zM528 331.4L495.6 176h-31.1c-9.6 0-16.9 2.8-21 12.9l-59.7 142.5H426s6.9-19.2 8.4-23.3H486c1.2 5.5 4.8 23.3 4.8 23.3H528z"/></svg>
                     </div>
                     <div>
-                        <img src="images/golden-grid.png" alt="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M405.2 263.8c-29.1.9-47.2 6.2-47.2 25.3 0 12.4 9.9 25.8 35 25.8 33.7 0 51.6-18.4 51.6-48.4v-3.3c-11.8 0-26.3.1-39.4.6m71.5 39.7c0 9.3.3 18.6 1 26.8h-29.8c-.8-6.9-1.1-13.6-1.1-20.2-16.1 19.8-35.3 25.5-61.9 25.5-39.5 0-60.6-20.9-60.6-45 0-35 28.8-47.3 78.6-48.4 13.7-.3 29-.4 41.7-.4v-3.4c0-23.4-15-33-41-33-19.3 0-33.6 8-35 21.8h-33.7c3.6-34.4 39.7-43.1 71.5-43.1 38.1 0 70.3 13.5 70.3 53.8v65.6zm-349-56.8c-2.3-54.7-87.5-56.6-94.4 0h94.4zm-95 21.4c3.5 58.3 79.2 57.4 91.2 21.6H157c-6.4 34.4-43 46.1-74.4 46.1-57.2 0-82.5-31.5-82.5-74 0-46.8 26.2-77.6 83-77.6 45.3 0 78.4 23.7 78.4 75.4v8.5H32.7zm211 45.7c29.8 0 50.2-21.5 50.2-53.8 0-32.4-20.4-53.8-50.2-53.8-29.6 0-50.2 21.4-50.2 53.8 0 32.3 20.6 53.8 50.2 53.8m-82.2-186h32.1v80.6c15.7-18.7 37.4-24.2 58.7-24.2 35.7 0 75.4 24.1 75.4 76.2 0 43.6-31.5 75.4-76 75.4-23.3 0-45.1-8.3-58.7-24.9 0 6.6-.4 13.2-1.1 19.5h-31.5c.5-10.2 1.1-22.8 1.1-33.1V127.8zM640 189.5l-99.2 194.8h-35.9l28.5-54.1-74.6-140.7h37.5l54.9 109.9L606 189.5h34z"/></svg>
                     </div>
                     <div>
-                        <img src="images/ronjone.png" alt="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M414.1 32H33.9C15.2 32 0 47.2 0 65.9V446c0 18.8 15.2 34 33.9 34H414c18.7 0 33.9-15.2 33.9-33.9V65.9C448 47.2 432.8 32 414.1 32zM237.6 391.1C163 398.6 96.4 344.2 88.9 269.6h94.4V290c0 3.7 3 6.8 6.8 6.8H258c3.7 0 6.8-3 6.8-6.8v-67.9c0-3.7-3-6.8-6.8-6.8h-67.9c-3.7 0-6.8 3-6.8 6.8v20.4H88.9c7-69.4 65.4-122.2 135.1-122.2 69.7 0 128.1 52.8 135.1 122.2 7.5 74.5-46.9 141.1-121.5 148.6z"/></svg>
                     </div>
                     <div>
-                        <img src="images/sweety.png" alt="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M61.7 169.4l101.5 278C92.2 413 43.3 340.2 43.3 256c0-30.9 6.6-60.1 18.4-86.6zm337.9 75.9c0-26.3-9.4-44.5-17.5-58.7-10.8-17.5-20.9-32.4-20.9-49.9 0-19.6 14.8-37.8 35.7-37.8.9 0 1.8.1 2.8.2-37.9-34.7-88.3-55.9-143.7-55.9-74.3 0-139.7 38.1-177.8 95.9 5 .2 9.7.3 13.7.3 22.2 0 56.7-2.7 56.7-2.7 11.5-.7 12.8 16.2 1.4 17.5 0 0-11.5 1.3-24.3 2l77.5 230.4L249.8 247l-33.1-90.8c-11.5-.7-22.3-2-22.3-2-11.5-.7-10.1-18.2 1.3-17.5 0 0 35.1 2.7 56 2.7 22.2 0 56.7-2.7 56.7-2.7 11.5-.7 12.8 16.2 1.4 17.5 0 0-11.5 1.3-24.3 2l76.9 228.7 21.2-70.9c9-29.4 16-50.5 16-68.7zm-139.9 29.3l-63.8 185.5c19.1 5.6 39.2 8.7 60.1 8.7 24.8 0 48.5-4.3 70.6-12.1-.6-.9-1.1-1.9-1.5-2.9l-65.4-179.2zm183-120.7c.9 6.8 1.4 14 1.4 21.9 0 21.6-4 45.8-16.2 76.2l-65 187.9C426.2 403 468.7 334.5 468.7 256c0-37-9.4-71.8-26-102.1zM504 256c0 136.8-111.3 248-248 248C119.2 504 8 392.7 8 256 8 119.2 119.2 8 256 8c136.7 0 248 111.2 248 248zm-11.4 0c0-130.5-106.2-236.6-236.6-236.6C125.5 19.4 19.4 125.5 19.4 256S125.6 492.6 256 492.6c130.5 0 236.6-106.1 236.6-236.6z"/></svg>
                     </div>
-                </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M257.2 162.7c-48.7 1.8-169.5 15.5-169.5 117.5 0 109.5 138.3 114 183.5 43.2 6.5 10.2 35.4 37.5 45.3 46.8l56.8-56S341 288.9 341 261.4V114.3C341 89 316.5 32 228.7 32 140.7 32 94 87 94 136.3l73.5 6.8c16.3-49.5 54.2-49.5 54.2-49.5 40.7-.1 35.5 29.8 35.5 69.1zm0 86.8c0 80-84.2 68-84.2 17.2 0-47.2 50.5-56.7 84.2-57.8v40.6zm136 163.5c-7.7 10-70 67-174.5 67S34.2 408.5 9.7 379c-6.8-7.7 1-11.3 5.5-8.3C88.5 415.2 203 488.5 387.7 401c7.5-3.7 13.3 2 5.5 12zm39.8 2.2c-6.5 15.8-16 26.8-21.2 31-5.5 4.5-9.5 2.7-6.5-3.8s19.3-46.5 12.7-55c-6.5-8.3-37-4.3-48-3.2-10.8 1-13 2-14-.3-2.3-5.7 21.7-15.5 37.5-17.5 15.7-1.8 41-.8 46 5.7 3.7 5.1 0 27.1-6.5 43.1z"/></svg>
+                    </div>
             </div>
         </section>
         <!--
@@ -310,7 +314,7 @@
                 Our plans are affordable and suit every business size. <br>Choose the one that suits you the most.
             </p>
             <div class="price-table">
-                <div class="columns">
+                <div class="columns animated fadeInUp" data-aos="zoom-out-left">
                     <ul class="price">
                         <li class="header">Basic</li>
                         <li class="grey">$ 9.99 / year</li>
@@ -323,7 +327,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="columns ">
+                <div class="columns animated fadeIn " data-aos="zoom-out-up">
                     <ul class="price with-shadow ">
                         <li class="header" style="background-color:#05BCA9">Pro</li>
                         <li class="grey">$ 24.99 / year</li>
@@ -336,7 +340,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="columns">
+                <div class="columns animated fadeInRight" data-aos="zoom-out-right">
                     <ul class="price">
                         <li class="header">Premium</li>
                         <li class="grey">$ 49.99 / year</li>
@@ -353,7 +357,7 @@
         </section>
         <!-- Testimonials Section
    ================================================== -->
-        <section id="testimonials">
+        <section id="testimonials" data-aos="zoom-out">
             <div class="row">
                 <div class="col-twelve">
                     <h2 class="h01">Hear What Are Clients Say.</h2>
@@ -408,7 +412,7 @@
                 <p>Folks who created this awesome product</p>
             </div>
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-sm-4 "  data-aos="zoom-out-left">
                     <div class="team-details">
                         <figure>
                             <img src="images/avatars/avatar-6.jpg" alt="Team Member">
@@ -445,7 +449,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4" data-aos="zoom-out-up" >
                     <div class="team-details">
                         <figure>
                             <img src="images/avatars/avatar-6.jpg" alt="Team Member">
@@ -482,7 +486,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4" data-aos="zoom-out-right">
                     <div class="team-details">
                         <figure>
                             <img src="images/avatars/avatar-6.jpg" alt="Team Member">
@@ -526,10 +530,10 @@
 	==========================================================
 	=================================================
 -->
-<section id="faq">
+<section id="faq" data-aos="zoom-out">
     <div class=" section-intro">
         <h2>Have questions? We have answers.</h2>
-        <div class="accordion">Does DreamHost Hosting Include a Domain Name? </div>
+        <div class="accordion">Does Coco Hosting Include a Domain Name? </div>
         <div class="panel">
             <p>Shared "Unlimited" web hosting plans with annual or longer terms include a free domain name (.COM, .NET, .ORG, .CLUB, .INFO, .LIFE, .ONLINE, .STORE, .TECH) and free WHOIS Privacy protection (normally a paid service at most of our competitors). </p>
         </div>
@@ -537,14 +541,14 @@
         <div class="panel">
             <p>Email hosting is included for FREE with all of the hosting plans except our Starter Shared Hosting plan and Remixer Standard. Please note that it’s not possible to host email without a hosting plan, and that there is a 2GB limit on email.</p>
         </div>
-        <div class="accordion">Does DreamHost Also Have a Website Builder? </div>
+        <div class="accordion">Does Coco Also Have a Website Builder? </div>
         <div class="panel">
-            <p>Yes. DreamHost offers Remixer, our modern website builder that makes publishing a beautiful website simple. For more advanced sites, we recommend using our custom integrated WordPress, the world's most popular and advanced website builder. From simple sites to complex, WordPress creates modern, responsive websites designed to grow with your ambition.</p>
+            <p>Yes. Coco offers Remixer, our modern website builder that makes publishing a beautiful website simple. For more advanced sites, we recommend using our custom integrated WordPress, the world's most popular and advanced website builder. From simple sites to complex, WordPress creates modern, responsive websites designed to grow with your ambition.</p>
         </div>
-        <div class="accordion">I Have a Domain Name at a Different Company. Can I transfer it to DreamHost? </div>
+        <div class="accordion">I Have a Domain Name at a Different Company. Can I transfer it to Coco? </div>
         <div class="panel">
             <p>
-                Yes, DreamHost specializes not just in web hosting but also domains. You can transfer your current domain to DreamHost and also take advantage of our WHOIS Privacy that's included free. If you are interested in transferring a domain name, <a href="#">read our documentation.</a>
+                Yes, Coco specializes not just in web hosting but also domains. You can transfer your current domain to Coco and also take advantage of our WHOIS Privacy that's included free. If you are interested in transferring a domain name, <a href="#">read our documentation.</a>
             </p>
         </div>
         <div class="accordion">Can I “Test Drive” Any of Your Products? </div>
@@ -679,11 +683,15 @@
         <!-- /footer-bottom -->
     </div>
 </footer>
-<div id="preloader">
-    <div id="loader"></div>
+<div id="preloade">
+    <div id="loade"></div>
 </div>
 <!-- Java Script
    ================================================== -->
+<script>
+    AOS.init(); // animate on scroll
+</script>
+
 <script src="js/jquery-1.11.3.min.js"></script>
 <script src="js/jquery-migrate-1.2.1.min.js"></script>
 <script src="js/plugins.js"></script>
