@@ -1467,27 +1467,51 @@ a.menu-toggle {
  *
  * ------------------------------------------------------------------- 
  */
- #happy-comp  {
+ .happy-comp  {
 	 margin: 3em 0;
 	 text-align: center;
 	 background:#E9E9E9;
+	 width: 100%;
+	 overflow: hidden;
  }
- #happy-com h5{
+ .happy-com h5{
 	font-family: ProximaNova;
+	text-align: center;
+	margin-top: 1rem;
+ }
+ .happy-comp .comp-img {
+	display: flex;
+	width: 100%;
 	text-align: center;
 	margin: 0 auto;
  }
- #happy-comp .comp-img {
-	display: flex;
-	widows: 100%;
-	margin: 0 auto;	
-	text-align: center;
- }
- #happy-comp .comp-img div{
+ .happy-comp .comp-img   div{
 	 width: 20%;
+	 text-align: center;
  }
-
-
+ .happy-comp .comp-img div svg{
+	 width: 100px;
+	
+ }
+ @media screen and (max-width:700px){
+	 .happy-comp{
+	 }
+	 .comp-img{
+		 overflow-x: auto;
+		 display: inline-block;
+	 }
+	 .comp-img div {
+		 width: 100%;
+	 }
+	 .comp-img div svg {
+		 width: 100px;
+		padding: 1em 1.5em;
+	 }
+	   body{
+		 box-sizing: border-box;
+	 }
+ }
+ 
  
 /** 
  * ===================================================================
@@ -1921,7 +1945,7 @@ a.menu-toggle {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: #05bca9;
+	background: rgb(5, 188, 170, .7);
 	transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
 	-webkit-transform: translate3d(0, 100%, 0);
