@@ -47,6 +47,8 @@
 
 html {
 	font-size: 10px;
+	overflow-x: -moz-hidden-unscrollable;
+	overflow-x: hidden-unscrollable;
 }
 @media only screen and (max-width:1024px) {
 	html {
